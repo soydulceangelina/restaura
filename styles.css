@@ -1,0 +1,253 @@
+/* Estilos generales */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.celular a {
+  text-decoration: none;
+  color: #afd5bb;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.celular a:hover {
+  padding: 5px 10px;
+  border: #afd5bb 2px solid;
+  border-radius: 20px;
+}
+
+.logo img {
+  max-width: 180px;
+  height: auto;
+}
+
+/* main */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Banner */
+.banner {
+  padding: 100px 0;
+}
+
+.banner-title {
+  max-width: 800px;
+}
+
+.banner-title h1 {
+  font-size: 4rem;
+  line-height: 1;
+  margin: 0;
+}
+
+/* mandamientos */
+.mandamientos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mandamiento-card {
+  flex-basis: calc(33.3% - 10px);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  border: #afd5bb 2px solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.mandamiento-card img {
+  height: 60px;
+  margin: 20px 0;
+}
+
+.card-title {
+  font-size: 18px;
+}
+
+/* Form */
+.registration-form {
+  margin: 200px auto;
+  display: flex;
+  align-items: center;
+}
+
+.form-item{
+  flex-basis: calc(50%);
+}
+
+.form-item img{
+  width: 60%;
+}
+
+.registration-form h2 {
+  text-align: center;
+}
+
+.registration-form label,
+.registration-form input,
+.registration-form button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.registration-form label {
+  margin-top: 10px;
+}
+
+.registration-form input {
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid #333;
+  padding: 0 10px;
+  transition: border-bottom-color 0.3s;
+}
+
+.registration-form button {
+  background-color: #afd5bb;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Accordion */
+
+.accordion {
+  width: 100%;
+  margin: 100px auto;
+}
+
+.accordion-title {
+  text-align: center;
+}
+
+.accordion-item {
+  background-color: #fff;
+  color: #333;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #afd5bb, transparent) 1;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  header {
+    max-width: 350px;
+    margin: 20px auto;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    max-width: 160px;
+  }
+
+  main {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .banner-title h1 {
+    font-size: 1.7rem;
+    line-height: 1;
+  }
+
+  .mandamientos {
+    gap: 15px;
+  }
+
+  .mandamiento-card {
+    flex-basis: calc(100%);
+    border-radius: 20px;
+  }
+
+  .registration-form {
+    max-width: 90%;
+    display: block;
+  }
+
+  .form-item img{
+   display: none;
+  }
+
+  .registration-form label,
+  .registration-form input,
+  .registration-form button {
+    margin: 5px 0;
+  }
+
+  .footer-social a {
+    margin: 0 5px;
+  }
+}

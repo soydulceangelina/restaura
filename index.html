@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Restaura</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./assets/restaura-logo.png" alt="Logo de Restaura" />
+      </div>
+      <div class="celular">
+        <a href="tel:+573132403680">+57 3132403680</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="banner" class="banner">
+        <div class="banner-title">
+          <h1>Libertad de alimentarte, conscientemente</h1>
+        </div>
+        <p>
+          Queremos solucionarte la vida y de paso RESTAURAR nuestra relación con
+          el medio ambiente, cadenas productivas y comida verdaderamente
+          saludable. No, no somos una cocina oculta; nuestra cocina tiene luz,
+          música, horas laborales justas, huerta, compost y mucha buena onda
+          para que tu comida no solo sea saludable en macros, micros, orgánica,
+          etc. Sino también sana en energía, llamanos hippies, nueva era, tercer
+          ojo, nosotros preferimos RESTAURA
+        </p>
+      </section>
+
+      <section class="mandamientos">
+        <div class="mandamiento-card" id="mandamiento1">
+          <!-- <h3 class="card-title">Delicioso</h3> -->
+          <img src="/assets/deli.svg" alt="Delicioso" />
+          <p>
+            En nuestra cocina nos enfocamos en la calidad de los ingredientes y
+            el respeto por los procesos naturales de producción y elaboración de
+            los alimentos.
+          </p>
+        </div>
+        <div class="mandamiento-card" id="mandamiento2">
+          <!-- <h3 class="card-title">Saludable</h3> -->
+          <img src="/assets/salud.svg" alt="Saludable" />
+          <p>
+            Nos dedicamos a ofrecer comida casera, gourmet y nutritiva, hecha
+            con ingredientes de alta calidad evitando técnicas de cocina que
+            puedan dañar el cuerpo o emitir radicales libres.
+          </p>
+        </div>
+        <div class="mandamiento-card" id="mandamiento3">
+          <!-- <h3 class="card-title">Responsable</h3> -->
+          <img src="/assets/responsable.svg" alt="Responsable" />
+          <p>
+            Nuestras entregas se realizan en loncheras con empaques de vidrio,
+            los cuales son esterilizados y reutilizados, evitando el uso de
+            plásticos u otros materiales de un solo uso.
+          </p>
+        </div>
+        <!-- Repite el bloque anterior para los demás mandamientos -->
+      </section>
+
+      <section id="formulario" class="registration-form">
+        <div class="form-item">
+          <img src="/assets/happy-face.svg" alt="Cocina buena vibra" />
+        </div>
+        <div class="form-item">
+          <h2>¿Cómo hacer parte?</h2>
+          <form
+            id="registration-form"
+            action="https://formspree.io/f/mzblvdyy"
+            method="POST"
+          >
+            <label for="name">Nombre completo:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="tel">Whatsapp:</label>
+            <input type="tel" id="tel" name="tel" required />
+
+            <button type="submit">Registrarse</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="accordion" class="accordion">
+        <h2 class="accordion-title">Los 10 mandamientos para Restaurar</h2>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            Comida para el alma (slow food)
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              En nuestra cocina nos enfocamos en la calidad de los ingredientes
+              y el respeto por los procesos naturales de producción y
+              elaboración de los alimentos. Somos conscientes de cada paso para
+              lograr un plato final de alta calidad y sabor.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Comida saludable</div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              Nos dedicamos a ofrecer comida casera, gourmet y nutritiva, hecha
+              con ingredientes de alta calidad evitando técnicas de cocina que
+              puedan dañar el cuerpo o emitir radicales libres. ¡Es una comida
+              preparada por su mamá! que los cuida, les lleva los caprichos
+              veggies, el pecado de la semana, la dieta del gym y quiere lo
+              mejor y compra cosas buenas. En este caso la mamá se llama Adriana
+              nuestra chef holística, hippie, chic, etc. y sobre todo buena
+              onda.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Servicio 10/10</div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              Nuestro objetivo es asegurarnos de que ustedes, el motor de
+              Restaura, se sientan valorados y escuchados en todo momento y
+              estamos siempre dispuestos a responder a cualquier pregunta o
+              sugerencia que puedan tener
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Altos estándares</div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              Nos comprometemos a mantener altos estándares de calidad en todos
+              los aspectos de nuestro negocio, desde la selección de
+              ingredientes hasta la entrega de nuestros productos. Estamos
+              constantemente evaluando y mejorando nuestros procesos para
+              asegurarnos de que nuestros clientes reciban siempre lo mejor.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            Responsables con tu salud a otro nivel
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              Nos preocupamos por el impacto ambiental de nuestra actividad y
+              utilizamos equipos y utensilios seguros para tu salud y el medio
+              ambiente: libres de teflón, plástico, cobre, etc, jabones
+              biodegradables.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">#NOPLÁSTICOS</div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              Nuestras entregas se realizan en loncheras con empaques de vidrio,
+              los cuales son esterilizados y reutilizados, evitando el uso de
+              plásticos u otros materiales de un solo uso. Además, comerás con
+              estilo en tus fantásticas tuppers de vidrio y hermosa lonchera.
+              Gracias a ti el mar tendrá menos plástico ¡Serás la sensación!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            Tenemos compost en nuestra CASA RESTAURA
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              Reducir el desperdicio de alimentos es una misión y aprovecharlos
+              también.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            Cultivamos lechugas y aromáticas en nuestra CASA RESTAURA
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              Los jardines urbanos son increíbles y tendencia mundial no sólo
+              por la cantidad de comida que pueden producir orgánicamente sino
+              por efecto terapéutico en las personas que lo cuidan, o sea
+              quienes cocinan tu comida.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Crecimiento consciente</div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              En Restaura queremos crecer de una manera sostenible. Nuestro
+              crecimiento está determinado por nuestra capacidad para mantener
+              la excelencia y cuidar que la experiencia la disfrutemos todos.
+              Crecer sin sacrificar nuestros principios.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">Buena onda</div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              ¡Seamos buena onda, así estaremos echando humo! Trabajamos con
+              buena energía y buscamos un ambiente laboral dónde a quienes les
+              confías tu alimentación disfruten trabajar. Así tratamos a las
+              personas y a nuestros alimentos.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="derechos">
+        <p>© 2023 • A product of Restaura</p>
+      </div>
+      <!-- <div class="footer-social">
+        <a href="#">Instagram</a>
+      </div> -->
+      <div class="celular">
+        <a href="tel:+573132403680">+57 3132403680</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
